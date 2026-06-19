@@ -1,7 +1,7 @@
-</main>
+</div> <!-- fin container -->
 
 <footer>
-    <p>© <?= date('Y') ?> - Gestion Scolaire</p>
+    <small>© 2025 Gestion Scolaire — Projet Mini PHP</small>
 </footer>
 
 </body>
