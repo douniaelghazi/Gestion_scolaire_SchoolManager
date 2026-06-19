@@ -8,7 +8,7 @@ $matieres = $stmt->fetchAll();
 ?>
 
 <div class="page-header">
-    <h2>📚 Liste des Matières</h2>
+    <h2>Liste des Matières</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter une matière</a>
 </div>
 
@@ -37,10 +37,10 @@ $matieres = $stmt->fetchAll();
                         <td><?= htmlspecialchars($m['nom_matiere']) ?></td>
                         <td><?= $m['coefficient'] ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $m['id_matiere'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
+                            <a href="modifier.php?id=<?= $m['id_matiere'] ?>" class="btn btn-sm btn-warning">Modifier</a>
                             <a href="supprimer.php?id=<?= $m['id_matiere'] ?>"
                                class="btn btn-sm btn-danger"
-                               onclick="return confirm('Supprimer cette matière ?')">🗑️ Supprimer</a>
+                               onclick="return confirm('Supprimer cette matière ?')">Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

@@ -8,7 +8,7 @@ $classes = $stmt->fetchAll();
 ?>
 
 <div class="page-header">
-    <h2>🏛️ Liste des Classes</h2>
+    <h2>Liste des Classes</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter une classe</a>
 </div>
 
@@ -41,10 +41,10 @@ $classes = $stmt->fetchAll();
                         <td><?= $c['annee_scolaire'] ?></td>
                         <td><?= $c['capacite_max'] ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $c['id_classe'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
+                            <a href="modifier.php?id=<?= $c['id_classe'] ?>" class="btn btn-sm btn-warning">Modifier</a>
                             <a href="supprimer.php?id=<?= $c['id_classe'] ?>"
                                class="btn btn-sm btn-danger"
-                               onclick="return confirm('Supprimer cette classe ?')">🗑️ Supprimer</a>
+                               onclick="return confirm('Supprimer cette classe ?')">Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

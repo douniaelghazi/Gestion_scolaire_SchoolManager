@@ -31,7 +31,7 @@ require_once '../../includes/navbar.php';
     <div class="form-col">
         <div class="card">
             <div class="card-header primary">
-                <h5 class="">➕ Ajouter une inscription</h5>
+                <h5 class="">Ajouter une inscription</h5>
             </div>
             <div class="card-body">
                 <?php if ($erreur): ?>
@@ -70,7 +70,7 @@ require_once '../../includes/navbar.php';
                         <input type="text" name="annee_scolaire" class="input" placeholder="ex: 2024-2025" required>
                     </div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>

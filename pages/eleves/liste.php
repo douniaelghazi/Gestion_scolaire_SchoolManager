@@ -8,7 +8,7 @@ $eleves = $stmt->fetchAll();
 ?>
 
 <div class="page-header">
-    <h2>👨‍🎓 Liste des Élèves</h2>
+    <h2>Liste des Élèves</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter un élève</a>
 </div>
 
@@ -34,12 +34,12 @@ $eleves = $stmt->fetchAll();
                         <td><?= htmlspecialchars($e['nom']) ?></td>
                         <td><?= htmlspecialchars($e['prenom']) ?></td>
                         <td><?= $e['date_naissance'] ?></td>
-                        <td><?= $e['sexe'] === 'M' ? '👦 M' : '👧 F' ?></td>
+                        <td><?= $e['sexe'] === 'M' ? 'M' : 'F' ?></td>
                         <td><?= htmlspecialchars($e['adresse'] ?? '-') ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $e['id_eleve'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
+                            <a href="modifier.php?id=<?= $e['id_eleve'] ?>" class="btn btn-sm btn-warning"> Modifier</a>
                             <a href="supprimer.php?id=<?= $e['id_eleve'] ?>" class="btn btn-sm btn-danger"
-                               onclick="return confirm('Supprimer cet élève ?')">🗑️ Supprimer</a>
+                               onclick="return confirm('Supprimer cet élève ?')"> Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

@@ -48,7 +48,7 @@ require_once '../../includes/navbar.php';
                         <input type="number" name="coefficient" class="input" step="0.01" min="0" value="<?= $m['coefficient'] ?>" required>
                     </div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-warning">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-warning">Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>

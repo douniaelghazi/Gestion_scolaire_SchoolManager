@@ -1,4 +1,4 @@
-</div> <!-- fin container -->
+</div>
 
 <footer>
     <small>© 2025 Gestion Scolaire — Projet Mini PHP</small>

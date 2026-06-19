@@ -19,7 +19,7 @@ $affectations = $stmt->fetchAll();
 ?>
 
 <div class="page-header">
-    <h2>📋 Liste des Affectations</h2>
+    <h2>Liste des Affectations</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter une affectation</a>
 </div>
 
@@ -52,10 +52,10 @@ $affectations = $stmt->fetchAll();
                         <td><?= htmlspecialchars($a['nom_classe']) ?></td>
                         <td><?= $a['annee_scolaire'] ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $a['id_affectation'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
+                            <a href="modifier.php?id=<?= $a['id_affectation'] ?>" class="btn btn-sm btn-warning"> Modifier</a>
                             <a href="supprimer.php?id=<?= $a['id_affectation'] ?>"
                                class="btn btn-sm btn-danger"
-                               onclick="return confirm('Supprimer cette affectation ?')">🗑️ Supprimer</a>
+                               onclick="return confirm('Supprimer cette affectation ?')"> Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

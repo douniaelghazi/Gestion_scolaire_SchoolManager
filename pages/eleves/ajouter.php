@@ -36,7 +36,7 @@ require_once '../../includes/navbar.php';
                     </div>
                     <div class="field"><label class="label">Adresse</label><input type="text" name="adresse" class="input"></div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>

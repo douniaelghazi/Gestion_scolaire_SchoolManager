@@ -6,7 +6,7 @@ $stmt = $pdo->query("SELECT * FROM enseignant ORDER BY nom");
 $enseignants = $stmt->fetchAll();
 ?>
 <div class="page-header">
-    <h2>👨‍🏫 Liste des Enseignants</h2>
+    <h2>Liste des Enseignants</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter un enseignant</a>
 </div>
 <?php if (isset($_GET['msg'])): ?><div class="alert alert-success"><?= htmlspecialchars($_GET['msg']) ?></div><?php endif; ?>
@@ -26,8 +26,8 @@ $enseignants = $stmt->fetchAll();
                         <td><?= htmlspecialchars($e['email'] ?? '-') ?></td>
                         <td><?= htmlspecialchars($e['telephone']) ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $e['id_enseignant'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
-                            <a href="supprimer.php?id=<?= $e['id_enseignant'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Supprimer ?')">🗑️ Supprimer</a>
+                            <a href="modifier.php?id=<?= $e['id_enseignant'] ?>" class="btn btn-sm btn-warning">Modifier</a>
+                            <a href="supprimer.php?id=<?= $e['id_enseignant'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Supprimer ?')">Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

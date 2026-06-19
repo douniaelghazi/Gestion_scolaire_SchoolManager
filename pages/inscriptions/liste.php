@@ -16,7 +16,7 @@ $inscriptions = $stmt->fetchAll();
 ?>
 
 <div class="page-header">
-    <h2>📝 Liste des Inscriptions</h2>
+    <h2>Liste des Inscriptions</h2>
     <a href="ajouter.php" class="btn btn-primary">+ Ajouter une inscription</a>
 </div>
 
@@ -49,10 +49,10 @@ $inscriptions = $stmt->fetchAll();
                         <td><?= $i['date_inscription'] ?></td>
                         <td><?= $i['annee_scolaire'] ?></td>
                         <td>
-                            <a href="modifier.php?id=<?= $i['id_inscription'] ?>" class="btn btn-sm btn-warning">✏️ Modifier</a>
+                            <a href="modifier.php?id=<?= $i['id_inscription'] ?>" class="btn btn-sm btn-warning">Modifier</a>
                             <a href="supprimer.php?id=<?= $i['id_inscription'] ?>"
                                class="btn btn-sm btn-danger"
-                               onclick="return confirm('Supprimer cette inscription ?')">🗑️ Supprimer</a>
+                               onclick="return confirm('Supprimer cette inscription ?')">Supprimer</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

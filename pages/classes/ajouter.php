@@ -58,7 +58,7 @@ require_once '../../includes/navbar.php';
                         <input type="number" name="capacite_max" class="input" min="1" required>
                     </div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-primary">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>

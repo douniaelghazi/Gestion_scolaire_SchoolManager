@@ -84,7 +84,7 @@ require_once '../../includes/navbar.php';
                         <input type="text" name="annee_scolaire" class="input" value="<?= $a['annee_scolaire'] ?>" required>
                     </div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-warning">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-warning">Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>

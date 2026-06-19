@@ -5,5 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion Scolaire</title>
     <link href="/Gestion_scolaire_SchoolManager/assets/css/style.css" rel="stylesheet">
+    
 </head>
 <body>

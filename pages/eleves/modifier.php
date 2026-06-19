@@ -24,7 +24,7 @@ require_once '../../includes/navbar.php';
 <div class="form-center">
     <div class="form-col">
         <div class="card">
-            <div class="card-header warning">✏️ Modifier l'élève</div>
+            <div class="card-header warning">Modifier l'élève</div>
             <div class="card-body">
                 <?php if ($erreur): ?><div class="alert alert-danger"><?= $erreur ?></div><?php endif; ?>
                 <form method="POST">
@@ -40,7 +40,7 @@ require_once '../../includes/navbar.php';
                     </div>
                     <div class="field"><label class="label">Adresse</label><input type="text" name="adresse" class="input" value="<?= htmlspecialchars($e['adresse'] ?? '') ?>"></div>
                     <div class="btn-group">
-                        <button type="submit" class="btn btn-warning">💾 Enregistrer</button>
+                        <button type="submit" class="btn btn-warning"> Enregistrer</button>
                         <a href="liste.php" class="btn btn-secondary">Annuler</a>
                     </div>
                 </form>
