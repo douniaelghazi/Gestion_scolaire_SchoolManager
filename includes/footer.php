@@ -1,7 +1,7 @@
 </div>
 
 <footer>
-    <small>© 2025 Gestion Scolaire — Projet Mini PHP</small>
+    <small>© 2025 Gestion Scolaire</small>
 </footer>
 
 </body>
